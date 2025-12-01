@@ -1,0 +1,6 @@
+[submodule "ai-module"]
+	path = ai-module
+	url = https://github.com/LongTruongPhamHai/employee-attrition-prediction-ai-server
+[submodule "client"]
+	path = client
+	url = https://github.com/LongTruongPhamHai/employee-attrition-prediction-client

@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  server:
+    build: ./ai-module
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./ai-module:/app
+      - ./ai-module/data:/app/data
+    environment:
+      - ENV=dev
+
+  client:
+    build: ./client
+    ports:
+      - "3000:3000"
+    environment:
+      - ENV=dev
